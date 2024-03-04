@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: url('../fundo.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden; 
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%; 
+}
+
+#container > div {
+    text-align: center;
+}
+
+#alertMessage {
+    padding: 20px;
+}
+
+#icon {
+    width: 75px;
+    height: 75px;
+}
+
+form {
+    background-color: rgba(26, 26, 26, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Adicionado para incluir padding na largura total */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #666;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #333;
+    color: #fff;
+}
+
+#btnEntrar {
+    background-color: purple;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#btnEntrar:hover {
+    background-color: aqua;
+}
+
+a {
+    text-decoration: none;
+    color: aqua;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    form {
+        max-width: 100%;
+    }
+
+    body {
+        background: url('../fundocel1.png') no-repeat center center fixed; 
+        background-size: cover;
+    }
+
+}

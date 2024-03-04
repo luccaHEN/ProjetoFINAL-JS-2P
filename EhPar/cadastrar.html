@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastrar.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <img id="icon" src="img/icone.png" alt="">
+            <h2>Cadastro</h2>
+            <form>
+                <input type="text" id="txtUser" placeholder="Usuário">
+                <input type="password" id="txtPwd" placeholder="Senha">
+                <input type="password" id="txtCheckPwd" placeholder="Confirmar Senha">
+                <input type="button" value="Cadastrar" id="btnCadastrar">
+            </form>
+        </div>
+        <div>
+            <main>
+                <audio id="somFail" src="sounds/fail.mp3" style="display: none;"></audio>
+                <audio id="somSuccess" src="sounds/loginSuccess.mp3" style="display: none;"></audio>
+            </main>
+            <p>
+                <a href="index.html">Entrar</a>
+            </p>
+        </div>
+    </div>
+    <div id="alertMessage"></div>
+    <script src="js/cadastrar.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/jogo.css">
+    <title>Title</title>
+</head>
+
+<body class="background-overlay">
+    <header>
+        <div class="container">
+            <div>
+                <label for="">Nível: </label>
+                <select name="nivel" id="nivel">
+                    <option value="selecione">Selecione</option>
+                    <option value="easy">Fácil</option>
+                    <option value="regular">Médio</option>
+                    <option value="hard">Difícil</option>
+                </select>
+            </div>
+            <div>
+                <span for="">Tempo: <span id="timer">00:00</span></span>
+                <button id="toggleMusic" class="responsive-button">⏯️</button>
+            </div>
+            <div>
+                <button id="start">INICIAR</button>
+                <button id="pause">PAUSAR</button>
+                <button id="stop">PARAR</button>
+                <button id="quit">SAIR</button>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <audio id="somClick" src="sounds/error.mp3" style="display: none;"></audio>
+        <audio id="somClick1" src="sounds/acertou.mp3" style="display: none;"></audio>
+        <audio id="musicaHard" src="sounds/hard.mp3" loop style="display: none;"></audio>
+        <audio id="musicaFundo" src="sounds/musicaFundo.mp3" loop autoplay style="display: none;"></audio>
+        <p id="numero">0</p>
+    </main>
+    <footer class="end">
+        <div class="container">
+            <span>ACERTOS: <span id="nAcertos">0</span> (<span><span id="pAcerto">0</span>%</span>)</span>
+            <span>ERROS: <span id="nErros">0</span></span>
+            <span>Números pares sorteados: <span id="pSorteados">0</span></span>
+        </div>
+    </footer>
+
+    <script src="js/jogo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+    user-select: none;
+}
+
+body {
+    background: url('../fundo.png') no-repeat center center fixed; 
+    background-size: cover;
+    background-color: #1d1d1d;
+    color: white;
+}
+
+header{
+    background-color: rgba(255, 255, 168, 0.5);
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+#numero {
+    font-size: 7rem;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+#numero:hover {
+    color: aqua;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+    padding: 20px;
+    align-items: center;
+    background-color: rgba(255, 255, 168, 0.2); 
+    border-radius: 10px;
+}
+
+.container select {
+    background-color: purple;
+    color: aqua;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    appearance: none;
+}
+
+.container label,
+.container span {
+    color: black;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.container span > span {
+    font-size: 20px;
+    color: aqua;
+}
+
+.container button {
+    background-color: #683d7e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, border 0.2s;
+}
+
+.container button:hover {
+    background-color: #5a2d6d;
+    border: 1px solid white;
+}
+
+.end {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 168, 0.5);
+    color: white;
+}
+
+.end a {
+    color: #27ae60;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.end a:hover {
+    text-decoration: underline;
+}
+
+@keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(10px);
+    }
+  }
+  
+  .shake {
+    animation: shake 0.5s ease-in-out;
+  }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin: 0 20px; 
+        text-align: center; 
+    }
+
+    #numero {
+        color: purple;
+        font-size: 5em;
+        font-weight: bold;
+        margin-bottom: 300px;
+    }
+
+    body {
+        background-color: #1d1d1d;
+        color: white;
+        overflow: hidden; 
+    }
+
+    html {
+        overflow: hidden; 
+    }
+
+    .container button {
+        margin: 5px 0px;
+        width: 49%;
+    }
+
+    select {
+        text-align: center;
+    }
+
+    .responsive-button {
+        display: none;
+    }
+    
+        body {
+        background: url('../fundocel.png') no-repeat center center fixed; 
+        background-size: cover;
+        background-position: 65% 10%;
+    }
+}
